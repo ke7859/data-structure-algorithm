@@ -42,7 +42,6 @@ public class SparseArray {
 
         // 创建对应的稀疏数组
         int[][] sparseArr = new int[sum + 1][3];
-
         // 给稀疏数组赋值
         sparseArr[0][0] = chessArr1.length;
         sparseArr[0][1] = chessArr1[0].length;

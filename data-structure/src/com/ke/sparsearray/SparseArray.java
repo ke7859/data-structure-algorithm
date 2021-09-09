@@ -2,6 +2,7 @@ package com.ke.sparsearray;
 
 /**
  * 稀疏数组
+ * http://note.youdao.com/noteshare?id=f85409b431514289413978fdf9716e5d&sub=E064D17324F54521BB8B89602F9503FA
  *
  * @program: data-structure-algorithm
  * @author: ke

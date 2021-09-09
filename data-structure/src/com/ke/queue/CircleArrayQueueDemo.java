@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * 使用数组模拟环形队列
+ * http://note.youdao.com/noteshare?id=ef706b9c9f0f2e2aba0636e6198e7425&sub=364FAD34BC49413793493D322D1C25DA
  *
  * @program: data-structure-algorithm
  * @author: ke

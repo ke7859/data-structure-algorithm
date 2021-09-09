@@ -1,6 +1,9 @@
 package com.ke.linkedlist;
 
 /**
+ * 链表
+ * http://note.youdao.com/noteshare?id=3fc4c5928705cfb7dcb5985a8a54f4e8&sub=CFA437629B5F475D97F8A3D48287BCAE
+ *
  * @program: data-structure-algorithm
  * @author: ke
  * @create: 2021-09-07 17:44

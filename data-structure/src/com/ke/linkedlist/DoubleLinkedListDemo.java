@@ -40,6 +40,17 @@ public class DoubleLinkedListDemo {
         doubleLinkedList.delete(3);
         System.out.println("删除后的链表");
         doubleLinkedList.list();
+        System.out.println();
+
+        doubleLinkedList = new DoubleLinkedList();
+        // 有序插入
+        doubleLinkedList.addByOrder(hero1);
+        doubleLinkedList.addByOrder(hero3);
+        doubleLinkedList.addByOrder(hero4);
+        doubleLinkedList.addByOrder(hero2);
+
+        System.out.println("有序插入");
+        doubleLinkedList.list();
     }
 }
 
@@ -101,6 +112,32 @@ class DoubleLinkedList {
         }
         // 当退出 while 循环时，temp 就指向了链表的最后
         // 形成一个双向链表
+        temp.next = heroNode;
+        heroNode.pre = temp;
+    }
+
+    /**
+     * 有序添加
+     *
+     * @param heroNode
+     */
+    public void addByOrder(HeroNode2 heroNode) {
+        HeroNode2 temp = this.head;
+        while (true) {
+            if (temp.next == null) {
+                break;
+            }
+            if (temp.next.no > heroNode.no) {
+                break;
+            } else if (temp.next.no == heroNode.no) {
+                System.out.printf("编号 %d 已经存在", heroNode.no);
+                return;
+            }
+            // 遍历下一个
+            temp = temp.next;
+        }
+
+        heroNode.next = temp.next;
         temp.next = heroNode;
         heroNode.pre = temp;
     }

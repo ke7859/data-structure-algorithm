@@ -1,5 +1,7 @@
 package com.ke.sort;
 
+import java.util.Arrays;
+
 /**
  * 冒泡排序
  * 文档：排序算法2.md
@@ -13,22 +15,20 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] array = {3, 9, -1, 10, 20};
-
-//        int[] array = new int[80000];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * 80000);
-        }
-        long l = System.currentTimeMillis();
         bubbleSort(array);
-        System.out.println("花费 " + (System.currentTimeMillis() - l) / 1000 + " 秒");
+        System.out.println("排序后：" + Arrays.toString(array));
     }
 
+    /**
+     * 冒泡排序，时间复杂度 O(n²)
+     *
+     * @param array
+     */
     public static void bubbleSort(int[] array) {
         // 临时变量
         int temp = 0;
         // 优化冒泡排序，表示是否进行过交换
         boolean flag = false;
-        // 冒泡排序的时间复杂度 O(n^2)
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
                 // 如果前面的数比后面的大，则交换

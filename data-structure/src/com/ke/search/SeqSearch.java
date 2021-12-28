@@ -1,7 +1,7 @@
 package com.ke.search;
 
 /**
- * 线性查找
+ * 线性查找，顺序查找
  *
  * @program: data-structure-algorithm
  * @author: ke
@@ -12,7 +12,7 @@ public class SeqSearch {
     public static void main(String[] args) {
         // 没有顺序的数组
         int[] arr = {1, 9, 11, -11, 34, 89};
-        int index = seqSearch(arr, 2);
+        int index = seqSearch(arr, 9);
         if (index == -1) {
             System.out.println("没有查找到");
         } else {
@@ -21,7 +21,7 @@ public class SeqSearch {
     }
 
     /**
-     * 这里我们实现的线性查找是找到一个，就返回
+     * 这里实现的线性查找是找到一个，就返回
      *
      * @param arr
      * @param value
